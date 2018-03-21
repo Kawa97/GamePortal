@@ -1,0 +1,16 @@
+<div class="login">
+  <h2 class="bottomBorder">GamePortal Login</h2>
+  <div class="content">
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <div class="spacing">
+        <label for="username">Userame:</label><br>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="username" name="username" #usernameVar="ngModel">
+        </div>
+        <div class="spacing">
+        <label for="password">Password:</label><br>
+        <input type="password" class="form-control" id="password" required [(ngModel)]="password" name="password" #passwordVar="ngModel">
+        </div>
+        <button type="submit">Submit</button>
+</form>
+</div>
+</div>
