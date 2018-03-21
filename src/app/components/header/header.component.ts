@@ -7,11 +7,12 @@ import { LoginService } from '../../services/login.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  name:string;
   constructor(private loginService :LoginService) {
   }
 
   ngOnInit() {
+    this.name=sessionStorage.getItem('username');
   }
 
   logout(){
