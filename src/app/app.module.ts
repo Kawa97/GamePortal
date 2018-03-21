@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DemoRouterModule } from './Router/router/router.module';
+import { HeaderComponent } from './Components/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     
