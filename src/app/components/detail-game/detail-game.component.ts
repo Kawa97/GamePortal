@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemGame } from '../../classes/itemGame';
+import { ItemGameService } from '../../services/item-game.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail-game',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailGameComponent implements OnInit {
 
-  constructor() { }
+  game: ItemGame;
+
+  constructor(private router: Router, private route: ActivatedRoute, private gameItemService: ItemGameService) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      if(params['id'] != '' && params['id'] != null){
+        this.game = this.gameItemService.getGameById(params['id']);
+      }
+    });
   }
 
 }

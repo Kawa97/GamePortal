@@ -1,12 +1,12 @@
-<div class="containerDetail">
+<div class="containerDetail" *ngIf="game">
     <div class="contentImage">
-        <img src="../assets/naruto.jpg" alt="">
+        <img src="{{game.immagine}}" alt="">
     </div>
 
     <div class="descripton">
-        <p>Titolo: </p>
-        <p>Genere: </p>
-        <p>Prezzo: </p>
+        <p>Titolo: {{game.titolo}}</p>
+        <p>Genere: {{game.genere}}</p>
+        <p>Prezzo: {{game.prezzo}}</p>
 
         <div class="buttonModify">MODIFICA</div>
     </div>
