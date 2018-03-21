@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ListComponent } from './components/list/list.component';
 import { DetailGameComponent } from './components/detail-game/detail-game.component';
 import { LoginService } from './services/login.service';
+import { AuthGuard } from './services/authguard.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { LoginService } from './services/login.service';
     FormsModule,
     DemoRouterModule
   ],
-  providers: [LoginService],
+  providers: [LoginService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
