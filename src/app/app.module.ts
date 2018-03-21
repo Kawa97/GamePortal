@@ -9,6 +9,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListComponent } from './components/list/list.component';
 import { DetailGameComponent } from './components/detail-game/detail-game.component';
+import { ItemGameService } from './services/item-game.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { DetailGameComponent } from './components/detail-game/detail-game.compon
     FormsModule,
     DemoRouterModule
   ],
-  providers: [],
+  providers: [ItemGameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -19,9 +19,8 @@ import { DetailGameComponent } from '../../components/detail-game/detail-game.co
 
     @NgModule({
     imports: [
-    RouterModule.forRoot(
-        routes,
-    )
+    RouterModule.forRoot(routes,)
+    
     ],
 
     exports: [

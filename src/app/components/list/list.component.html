@@ -1,6 +1,6 @@
-<div class="container">
-    <img class="imgGame" src="" alt="">
+<div class="container" *ngFor="let itemGame of itemsGame; let i=index">
+    <img class="imgGame" src="{{itemGame.immagine}}" alt="">
     <hr>
-    <p>Titolo: </p>
-    <p>Prezzo: </p>
+    <p>Titolo: {{itemGame.titolo}}</p>
+    <p>Prezzo: {{itemGame.prezzo}}</p>
 </div>
