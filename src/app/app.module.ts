@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DemoRouterModule } from './Router/router/router.module';
 import { HeaderComponent } from './Components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { ListComponent } from './components/list/list.component';
+import { DetailGameComponent } from './components/detail-game/detail-game.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    ListComponent,
+    DetailGameComponent
   ],
   imports: [
     
