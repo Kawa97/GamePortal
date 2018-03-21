@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './component/home/home.component';
-import { ListComponent } from './component/list/list.component';
-import { DetailGameComponent } from './component/detail-game/detail-game.component';
+import { HomeComponent } from './components/home/home.component';
+import { ListComponent } from './components/list/list.component';
+import { DetailGameComponent } from './components/detail-game/detail-game.component';
 
 
 @NgModule({
