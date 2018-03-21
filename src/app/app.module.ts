@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ListComponent } from './components/list/list.component';
 import { DetailGameComponent } from './components/detail-game/detail-game.component';
 import { ItemGameService } from './services/item-game.service';
+import { ModifyComponent } from './components/modify/modify.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ItemGameService } from './services/item-game.service';
     HeaderComponent,
     HomeComponent,
     ListComponent,
-    DetailGameComponent
+    DetailGameComponent,
+    ModifyComponent
   ],
   imports: [
     

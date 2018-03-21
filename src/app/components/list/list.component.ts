@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemGameService } from '../../services/item-game.service';
 import { ItemGame } from '../../classes/itemGame';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -11,10 +12,14 @@ export class ListComponent implements OnInit {
 
   itemsGame:  ItemGame[] = [];
 
-  constructor(private itemGameService: ItemGameService) { 
+  constructor(private itemGameService: ItemGameService, private router: Router) { 
     this.itemsGame = this.itemGameService.getGameItem();
   }
 
+  clickItem(item: ItemGame){
+    this.router.navigate(['/detail/' + item.id]);
+  }
+  
   ngOnInit() {
   }
 

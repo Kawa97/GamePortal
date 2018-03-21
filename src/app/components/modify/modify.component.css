@@ -1,0 +1,40 @@
+.containerDetail {
+    width: 1500px;
+    height: 750px;
+    background-color: aliceblue;
+    border: 2px solid;
+    padding: 20px;
+    display: block;
+    margin: 80px auto;
+}
+
+.buttonModify {
+    width: 100px;
+    height: 20px;
+    background-color: green;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.contentImage {
+    float: left;
+    margin: auto;
+    width: 750px;
+}
+
+.contentImage img {
+    height: 700px;
+    margin: 25px auto;
+    display: block;
+}
+
+.descripton {
+    width: 750px;
+    float: left;
+    margin-top: 100px
+}
+
+.spacing {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+<div class="containerDetail">
+    <div class="contentImage">
+        <img src="../assets/naruto.jpg" alt="">
+    </div>
+
+    <div class="descripton">
+        <form (ngSubmit)="onSubmit()" #modifyForm="ngForm">
+
+            <div class="spacing">
+                <label for="titolo">Titolo:</label><br>
+                <input type="text" class="form-control" id="titolo" required [(ngModel)]="titolo" name="titolo" #titoloVar="ngModel">
+            </div>
+
+            <div class="spacing">
+                <label for="genere">Genere:</label><br>
+                <input type="password" class="form-control" id="genere" required [(ngModel)]="genere" name="genere" #genereVar="ngModel">
+            </div>
+
+            <div class="spacing">
+                <label for="prezzo">Prezzo:</label><br>
+                <input type="password" class="form-control" id="prezzo" required [(ngModel)]="prezzo" name="prezzo" #prezzoVar="ngModel">
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>

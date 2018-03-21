@@ -1,4 +1,4 @@
-<div class="container" *ngFor="let itemGame of itemsGame; let i=index">
+<div class="container" *ngFor="let itemGame of itemsGame; let i=index" (click)="clickItem(itemGame)">
     <img class="imgGame" src="{{itemGame.immagine}}" alt="">
     <hr>
     <p>Titolo: {{itemGame.titolo}}</p>

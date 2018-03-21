@@ -13,5 +13,14 @@ export class ItemGameService {
   getGameItem(): ItemGame[]{
     return this.itemsGame;
   }
+  
+  getGameById(id: string){
+    for(let item of this.itemsGame){
+        if(item.id == id){
+            return item;
+        }
+    }
+    return null;
+}
 
 }
