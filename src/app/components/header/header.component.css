@@ -23,4 +23,5 @@
     text-decoration: none;
     padding-right: 5px;
     cursor: pointer;
+    cursor: context-menu;
 }
