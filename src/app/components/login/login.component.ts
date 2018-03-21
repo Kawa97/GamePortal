@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -7,14 +8,15 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-  constructor() { }
+  constructor(private loginService :LoginService) { }
 
-  username:String;
-  password:String;
+  username:string;
+  password:string;
 
 onSubmit(){
   if(this.username== "ciao" && this.password== "ciao"){
     console.log("e ciao");
+    this.loginService.Login(this.username,this.password);
   }
   else{
     console.log("NOPE");
